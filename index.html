@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    
+     <!-- loging area start -->
     <div id="login-area">
         <h1 class="text-center"> Welcome to pionner Bank </h1>
 
@@ -20,12 +20,23 @@
         <br>
         <input type="password" class="form-control" name="" id="" placeholder="Password">
         <br>
-        <button class="btn btn-success"> Enter </button>
+        <button id="login-id" class="btn btn-success"> Enter </button>
 
     </div>
 
 
     </div>
-    
+
+    <!-- loging area end -->
+
+
+
+    <script>
+      let loginbtn = document.getElementById("login-id");
+      loginbtn.addEventListener("mousemove", function(){
+          console.log("amake click as jin marse");
+      })
+
+    </script> 
 </body>
 </html>
