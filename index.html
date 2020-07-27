@@ -30,17 +30,55 @@
     <!-- loging area end -->
 
 
+    <!-- transation area start -->
+
+    <div id="transation-area">
+       <div class="row">
+           <div class="col-md-4">
+               <div class="deposit status">
+                <h5>Deposit</h5>
+                <h2>$00</h2>
+               </div>
+               
+           </div>
+           <div class="col-md-4">
+               <div class="withdraw status">
+                <h5>Withdraw</h5>
+               <h2>$00</h2>
+
+               </div>
+
+           </div>
+           <div class="col-md-4">
+               <div class="balcnce status">
+                <h5>Balance</h5>
+                <h2>$1200</h2>
+            </div>
+               </div>
+               
+       </div>
+
+    </div>
+
+    
+
+
 
     <script>
       let loginbtn = document.getElementById("login-id");
       loginbtn.addEventListener("click", function(){
-          let loginArea = document.getElementById("login-area");
-          loginArea.style.display = "none";
+        let loginAreas = document.getElementById("login-area");
+        loginAreas.style.display = "none";
+        let transactionArea = document.getElementById("transation-area");
+        transactionArea.style.display = "block"
+
+
+      })
          
           
          
 
-      })
+    
 
     </script> 
 </body>
